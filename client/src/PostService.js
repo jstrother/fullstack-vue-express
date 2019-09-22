@@ -3,7 +3,7 @@ import axios from 'axios';
 
 Vue.use(axios);
 
-const url = 'http://localhost:5000/api/posts/';
+const url = 'api/posts/';
 
 export default class PostService {
   // get posts
