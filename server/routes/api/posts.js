@@ -32,7 +32,7 @@ router.delete('/:id', async (req, res) => {
 
 async function loadPostsCollection() {
 const client = await mongodb.MongoClient
-.connect(process.env.DATABASE_URL, {
+.connect('mongodb+srv://tutorialUser:tutorialPassword@cluster0-yndmp.mongodb.net/test?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
